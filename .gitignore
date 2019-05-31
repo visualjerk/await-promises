@@ -1,0 +1,16 @@
+# OS or Editor folders
+.DS_Store
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+sftp-config.json
+.idea
+
+# Folders to ignore
+node_modules

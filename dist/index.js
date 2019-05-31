@@ -1,0 +1,2 @@
+!function(s,e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e():"function"==typeof define&&define.amd?define(e):(s=s||self)["await-promises"]=e()}(this,function(){"use strict";return class{constructor(){this.promises=[],this.OldPromise=null}collect(){const s=this;this.OldPromise=Promise,Promise=class extends this.OldPromise{constructor(){super(...arguments),s.promises.push(this)}}}stop(){Promise=this.OldPromise}wait(){return Promise.all(this.promises)}}});
+//# sourceMappingURL=index.js.map

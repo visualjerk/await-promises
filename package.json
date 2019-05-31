@@ -1,0 +1,30 @@
+{
+  "name": "await-promises",
+  "description": "Test asynchronious functions with ease",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Jörg Bayreuther",
+  "license": "MIT",
+  "keywords": [
+    "async",
+    "await",
+    "promise",
+    "promises",
+    "testing",
+    "test",
+    "jest"
+  ],
+  "devDependencies": {
+    "rollup": "^1.13.0",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.0.1",
+    "rollup-plugin-terser": "^5.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c && node dist/index.js",
+    "test": "yarn build && jest"
+  },
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}
