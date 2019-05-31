@@ -4,7 +4,7 @@ This module makes testing asynchronious stuff easier.
 
 You don't have to worry about every internally used promise in your tests. Just collect all promises and wait for them to finish.
 
-Example with JEST:
+## Example with JEST:
 
 ```js
 import AwaitPromises from 'await-promises'
