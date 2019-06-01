@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <my-transition>
-      <div v-show="show">test</div>
+      <div v-if="show">test</div>
     </my-transition>
     <button @click="show = !show">Toggle</button>
   </div>
