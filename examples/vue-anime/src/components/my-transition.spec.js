@@ -25,7 +25,7 @@ describe('MyTransition.vue', () => {
     }
     const wrapper = mount(comp)
 
-    // This triggers asynchronious behaviour inside the comp
+    // This triggers asynchronous behaviour inside the comp
     wrapper.vm.show = true
     const foo = wrapper.find('p')
 

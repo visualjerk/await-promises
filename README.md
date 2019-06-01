@@ -1,6 +1,6 @@
 # Await Promises
 
-This module makes testing asynchronious stuff easier.
+This module makes testing asynchronous stuff easier.
 
 You don't have to worry about every internally used promise in your tests. Just collect all promises and wait for them to finish.
 
@@ -56,7 +56,7 @@ describe('MyTransition.vue', () => {
     }
     const wrapper = mount(comp)
 
-    // This triggers asynchronious behaviour inside the comp
+    // This triggers asynchronous behaviour inside the comp
     wrapper.vm.show = true
     const foo = wrapper.find('p')
 
