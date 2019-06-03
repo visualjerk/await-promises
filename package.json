@@ -1,7 +1,7 @@
 {
   "name": "await-promises",
   "description": "Test asynchronous functions with ease",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "author": "Jörg Bayreuther",
   "license": "MIT",
