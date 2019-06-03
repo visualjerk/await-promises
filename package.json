@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "rollup -c && node dist/index.js",
-    "test": "yarn build && jest"
+    "test": "yarn build && jest __tests__"
   },
   "repository": {
     "type" : "git",
