@@ -68,3 +68,46 @@ describe('MyTransition.vue', () => {
   })
 })
 ```
+
+## Wait helper
+
+Await promises offers wait helper, so less boilerplate is needed when using it:
+
+```js
+import { wait } from 'await-promises'
+
+it('async test', async () => {
+  let a = 0
+  await wait(() => {
+    // Run all kind of code, that invokes promises
+    new Promise((resolve, reject) => {
+      setTimeout(() => {
+        a++
+        resolve()
+      }, 10)
+    })
+  })
+  expect(a).toEqual(1)
+})
+```
+
+If you need to do async stuff inside the waiter, make sure to pass a `async` function:
+
+```js
+import { wait } from 'await-promises'
+
+it('async test', async () => {
+  let a = 0
+  await wait(async () => {
+    await asyncFunction()
+    // Run all kind of code, that invokes promises
+    new Promise((resolve, reject) => {
+      setTimeout(() => {
+        a++
+        resolve()
+      }, 10)
+    })
+  })
+  expect(a).toEqual(1)
+})
+```
