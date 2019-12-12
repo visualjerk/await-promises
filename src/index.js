@@ -26,3 +26,11 @@ class AwaitPromises {
 }
 
 export default AwaitPromises
+
+export async function wait(func) {
+  const waiter = new AwaitPromises()
+  waiter.collect()
+  await func()
+  waiter.stop()
+  await waiter.wait()
+}

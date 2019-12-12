@@ -12,11 +12,12 @@ export default {
     file: 'dist/index.js',
     name: 'await-promises',
 		format: 'umd',
+		exports: 'named',
 		sourcemap: true
 	},
 	plugins: [
-		resolve(), // tells Rollup how to find date-fns in node_modules
-		commonjs(), // converts date-fns to ES modules
-		production && terser() // minify, but only in production
+		resolve(),
+		commonjs(),
+		production && terser()
 	]
 };
